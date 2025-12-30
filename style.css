@@ -1,0 +1,112 @@
+body {
+    background-color: #ffe6f0;
+    font-family: 'Comic Neue', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* 卡片 */
+.card {
+    background-color: white;
+    padding: 30px;
+    width: 360px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.4);
+}
+
+/* 圖示 */
+.avatar {
+    font-size: 90px;
+}
+
+/* 文字 */
+.name {
+    color: #ff69b4;
+    font-size: 36px;
+    margin: 5px 0;
+}
+
+.student-id {
+    color: #ff9acb;
+    font-size: 14px;
+}
+
+/* 資訊框 */
+.info-box {
+    background-color: #fff0f6;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 按鈕 */
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* 愛心 */
+#hearts {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* 點擊後文字（一開始隱藏） */
+#helloText {
+    display: none;
+    color: #ff1493;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* 留言區 */
+input {
+    width: 80%;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid pink;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff0f6;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* 愛心上升動畫 */
+.floating-heart {
+    position: absolute;
+    font-size: 20px;
+    animation: floatUp 1.2s ease-out forwards;
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+}
